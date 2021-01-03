@@ -1,0 +1,174 @@
+,<div class="container_body">
+    <div class="wpb_wrapper">
+        <h1>Clients</h1>
+        <div class="wpb_text_column">
+            <div class="wpb_wrapper">
+                <div>
+                    <p>Our goal is to be able to win our clients` complete trust and transform services into
+                        partnerships.
+                    </p>
+                    <p>This is why we offer a unique and tailored “One Stop Shop” solution for our clients and build an
+                        open
+                        and trustworthy relationship with them. At KLM we establish transparent
+                        communication
+                        procedures and provide in-depth performance analysis. Our standards are high, and this is backed
+                        up
+                        by solid procedures to help us select the right people and reach top quality results.</p>
+                    <p>As a BPO and ITO provider we have a great challenge to engage our people at the same time with
+                        KLM and with our clients` brands. How do we achieve that? We select our partners
+                        very
+                        carefully and we always aim for synergy between KLM`s culture and values and our partners`
+                        activities, culture and values.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <blockquote>
+
+        <div class="text">
+            We work hard to build long lasting win-win relationships with our clients.
+            We are jointly working towards performance, transformation, quality and financially driven objectives.
+            Our partners measure our success in reduced costs, increased revenue and improved customer experience.
+        </div>
+    </blockquote>
+
+    <div class="picture-text-wrapper">
+        <div class="text-wrapper">
+            <div class="paragraph-wrapper">
+                <p>We develop our team members and help them adapt to our clients’ business needs and market
+                    trends. Our <a href="/culture">company culture</a> is
+                    people oriented. We promote transparency, personal development and we strive to align
+                    ourselves with our client’s environment and corporate strategy. All this helps us
+                    achieve amazing CSAT, cost efficiency and customer loyalty.</p>
+                <p>In our journey so far and thanks to our company culture we have won the trust of top
+                    retailers, online payment platforms, game producers and email service providers.</p>
+            </div>
+        </div>
+        <div class="image_wrapper" @fade>
+            <figure class="wpb_wrapper vc_figure">
+                <div class="vc_single_image-wrapper   vc_box_border_grey"><img class="vc_single_image-img "
+                        src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        width="540" height="350" alt="clients" title="clients"></div>
+            </figure>
+        </div>
+    </div>
+
+    <h3 class="mid-separator">We offer reliable and high-quality support to all of our clients</h3>
+
+
+    <div class="vc_row">
+        <div class="wpb_column  vc_column-inner">
+            <div class="wpb_wrapper">
+                <div class="vc_icon_element">
+                    <div class="vc_icon_element-inner ">
+                        <span class="vc_icon_element-icon fa fa-envelope" style="color:#02a9e3 !important"></span></div>
+                </div>
+                <div class="wpb_text_column ">
+                    <div class="wpb_wrapper">
+                        <p style="text-align: center;"><span style="font-size: 16px; color: #02a9e3;">Service
+                                providers</span></p>
+                    </div>
+                </div>
+                <div class="vc_empty_space" style="height: 25px">
+                </div>
+                <div class="wpb_text_column ">
+                    <div class="wpb_wrapper">
+                        <p style="padding-left: 30px;">A video game development
+                            company.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wpb_column  vc_column-inner ">
+            <div class="wpb_wrapper">
+                <div class="vc_icon_element">
+                    <div class="vc_icon_element-inner ">
+                        <span class="vc_icon_element-icon fa fa-gamepad" style="color:#02a9e3 !important"></span></div>
+                </div>
+                <div class="wpb_text_column ">
+                    <div class="wpb_wrapper">
+                        <p style="text-align: center;"><span style="font-size: 16px; color: #02a9e3;">Gaming<br>
+                                (PC, Mobile, Console)</span></p>
+                    </div>
+                </div>
+                <div class="wpb_text_column ">
+                    <div class="wpb_wrapper">
+                        <p style="padding-left: 30px;">Automated email systems. Instant email triggers and daily reports</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wpb_column  vc_column-inner ">
+            <div class="wpb_wrapper">
+                <div class="vc_icon_element">
+                    <div class="vc_icon_element-inner ">
+                        <span class="vc_icon_element-icon fa fa-desktop" style="color:#02a9e3 !important"></span></div>
+                </div>
+                <div class="wpb_text_column ">
+                    <div class="wpb_wrapper">
+                        <p style="text-align: center;"><span style="font-size: 16px; color: #02a9e3;">Technology
+                                companies</span></p>
+                    </div>
+                </div>
+                <div class="vc_empty_space" style="height: 25px">
+                </div>
+                <div class="wpb_text_column ">
+                    <div class="wpb_wrapper">
+                        <p style="padding-left: 30px;">Global company for consulting, digital, technology
+                            and operations services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-container swiper-container-horizontal">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+            <div *ngFor="let client of allClients" class="item swiper-slide "
+                style="width: 210.2px; margin-right: 30px;">
+                <img class="client_logo" alt="" src="{{client.pictureURL}}">
+            </div>
+
+        </div>
+    </div>
+    <div class="empty-space" style="height: 32px;"> </div>
+
+    <div class="wpb_column ">
+        <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+
+                <!-- Slider main container -->
+                <div class="swiper-container swiper-container-horizontal">
+
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper-testimonials">
+
+                        <div *ngFor="let client of allClients" class="swiper-slide swiper-slide-next"
+                            data-img-url="https://ponticasolutions.com/wp-content/uploads/2019/07/Mailjet-300.jpg"
+                            style="width: 370.333px; margin-right: 30px;">
+                            <div class="slide-content">
+
+                                <div class="photo">
+                                    <img class="" alt="" width="60" height="60" src="{{client.pictureURL}}">
+                                </div>
+
+                                <div class="text">
+                                    {{client.testimony}} </div>
+
+                                <div class="about-author">
+                                    <div class="author">
+                                        {{client.author}} </div>
+                                    <div class="position">
+                                        {{client.authorPosition}} </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

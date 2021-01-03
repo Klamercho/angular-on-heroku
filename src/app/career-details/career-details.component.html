@@ -1,0 +1,82 @@
+<div id="content" class="container">
+
+    <div class="content-wrapper">
+
+        <div class="post-date">
+            November 24, 2020</div>
+
+        <!--
+Post title
+-->
+        <h1 class="post-title">{{currentCareer.jobName}}</h1>
+        <div class="Right" style="display: block; width: 100%;">
+            <div *ngIf="!isLogged">
+                <a class="button" href="/login">Log in to apply</a>
+            </div>
+            <div *ngIf="isLogged && !hasCareer">
+                <button mat-flat-button class="Right" color="primary" type="button" (click)="addCareer()">Apply</button>
+            </div>
+            <div *ngIf="isLogged && hasCareer">
+                <button mat-flat-button style="float: left;" color="primary" type="button">You have applied for this
+                    career!</button>
+            </div>
+            <div *ngIf="isLogged" style="float: right;">
+                <button mat-flat-button class="Right" color="primary" type="button" (click) = "logOut()"> Logout </button>
+            </div>
+        </div>
+
+
+        <!--
+Post content
+-->
+        <article class="content-text-wrapper">
+            <div class="single_job_listing">
+
+                <ul class="job-listing-meta meta">
+
+
+                    <li class="job-type full-time-en">Full Time</li>
+
+
+                    <li class="location"><a class="google_map_link"
+                            href="https://www.google.com/maps/search/{{currentCareer.location}}">{{currentCareer.location}}</a>
+                    </li>
+
+                </ul>
+
+
+                <div class="job_description">
+                    <p><span style="color: #00ccff"><strong>**All interviews will be conducted remotely (online or by
+                                phone).</strong></span></p>
+                    <p>As a newly established business, one of our main objectives is builing our core team. Every opportunity 
+                        with us is a chance to be at the forefront of our business. You will have the chance to grow as we grow,
+                        receive hands on experience with many of our projects and most importantly, your voice will matter! <br>
+                        You will be working directly for us as one of our representatives. Our main office is located in the capital,
+                        with great view of the whole city. All of the necessary equipment will be provided</p>
+                    <p><strong>YOUR ROLE:</strong></p>
+                    <ul>
+                        <li *ngFor="let roleReq of currentCareer.roleRequirements" class="list">{{roleReq}}</li>
+                    </ul>
+                    <p><strong>REQUIRED SKILLS:</strong></p>
+                    <ul>
+                        <li *ngFor="let reqSkills of currentCareer.requiredSkills" class="list">{{reqSkills}}</li>
+                    </ul>
+                    <p><strong>WHAT WE OFFER:</strong></p>
+                    <ul>
+                        <li class="list"><strong>An attractive remuneration, performance, and referral bonuses.</strong>
+                        </li>
+                        <li class="list"><strong>No experience needed. Full training. Full or part-time.</strong></li>
+                        <li class="list">Additional health insurance and other social benefits. Exclusive discounts
+                            &amp; offers.
+                        </li>
+                        <li class="list">Open-minded management team promoting innovation, personal, and professional
+                            development.
+                        </li>
+                        <li class="list">Permanent employment.</li>
+                    </ul>
+                    <p><span style="font-weight: 400"></span></p>
+                </div>
+            </div>
+        </article>
+
+    </div>

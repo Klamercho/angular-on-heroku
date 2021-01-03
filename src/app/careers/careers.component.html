@@ -1,0 +1,46 @@
+<div class="container-body">
+    <h1>Let's optimize the world together!</h1>
+
+    <p>Join us and you will be one of the founding members of our team! This is a great opportunity for
+        any experienced proffessional, who wants to be a co-owner of the business, they work in.
+    </p>
+
+    <p>
+        At KLM Solutions we treat our workplace as our home.
+        Especially in these uncertain times of 2020, working from home is more or less the norm.
+        Which is why all of our positions come with a monthly bonus for working from home.
+        This bonus is 10% of the agreed salary.
+    </p>
+
+    <h5> See our positions and join our team! </h5>
+
+
+    <form #f = "ngForm" class="search_jobs" (ngSubmit)="searchHandler(f.value)">
+
+        <div class="keyword">
+            <label for="keyword">Keywords</label>
+            <input #keyword ="ngModel" type="text" name="keyword" id="keyword" placeholder="Keywords" value="" ngModel>
+        </div>
+
+        <div class="location">
+            <label for="location">Location</label>
+            <input #location="ngModel" type="text" name="location" id="location" placeholder="Location" value="" ngModel>
+        </div>
+
+        <div style="clear: both"></div>
+        <div class="search_submit">
+            <input type="submit" value="Search Jobs">
+        </div>
+    </form>
+    <ul *ngIf = "allCareers">
+        <li *ngFor = "let career of allCareers">
+            <a href="/careers/{{career._id}}">
+                <span class='logo'>logo</span>
+                <span class="name"> {{career.jobName}}</span>
+                <span class="type">Full-time</span>
+                <span class="location">{{career.location}}</span>
+            </a>
+        </li>
+    </ul>
+    <div *ngIf = "!allCareers || (allCareers.length === 0)" class="noOpenPositions"> Sorry, we do not have any positions :(</div> 
+</div>

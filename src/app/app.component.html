@@ -1,0 +1,7 @@
+
+<div @loader style="background-color: white; position: absolute; z-index: 1;">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div>
+<div @pageFade><app-header style="position: relative;"></app-header></div>
+<div @pageFade><router-outlet style="position: relative;"></router-outlet></div>
+<div @pageFade class="footer"><app-footer  style="position: relative;"></app-footer></div>

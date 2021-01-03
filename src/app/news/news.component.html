@@ -1,0 +1,57 @@
+<div class="content">
+    <div class="initial-box">
+        <h1> News </h1>
+        <div style="margin-left: 9%; margin-right: 9%; text-align: center;">
+            <p> Stay up to date with the news around KLM's business!
+            </p>
+        </div>
+        <div class="empty-space"></div>
+    </div>
+
+    <div class="news-body">
+
+        <ul>
+            <li *ngFor="let new of allNews; let i = index">
+                <div *ngIf='i % 2 === 0' class="news-article">
+                    <div class="picture">
+                        <img class="image" src="{{new.newsPictureUrl}}" width="370" height="240" alt="services"
+                            title="services">
+                    </div>
+
+                    <div class="text" style="margin-right: 9%;">
+                        <div style="height: 70%;">
+                            <h3> {{new.newsTitle}} </h3>
+                            <p>
+                                {{new.newsDescription}}
+                            </p>
+                        </div>
+                        <div class="simple" style="margin-left: 25%;">
+                            <a href="/someid" class="button style-blue size-small">Read more here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div *ngIf='i % 2 !== 0' class="news-article">
+                    <div class="text" style="margin-left: 9%;">
+                        <div style="height: 70%;">
+                            <h3> {{new.newsTitle}} </h3>
+                            <p>
+                                {{new.newsDescription}}
+                            </p>
+                        </div>
+                        <div class="simple" style="margin-left: 25%;">
+                            <a href="/someid" class="button style-blue size-small">Read more here</a>
+                        </div>
+                    </div>
+                    <div class="picture">
+                        <img class="image" src="{{new.newsPictureUrl}}" width="370" height="240" alt="services"
+                            title="services">
+                    </div>
+                </div>
+
+                <div class="empty-space">
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

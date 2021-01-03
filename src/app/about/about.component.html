@@ -1,0 +1,135 @@
+<div class="container-body">
+	<div class="row">
+
+		<div id="content" class="col-md-12">
+			<div class="wpb_column ">
+				<div class="vc_column-inner">
+					<div class="wpb_wrapper">
+						<h1>About us</h1>
+						<div>
+							<div class="wpb_wrapper">
+								<div>
+									<p>KLM is a Business solutions company, founded in 2020
+										by experienced professionals in the industry. Offering unique
+										solutions to companies, each custom to the needs of the busines.</p>
+									<p>We are a strong team, with many years of experience in reporting and automation.
+										We understand that data empowers descision making and our primary goal is to
+										simplify and visualize customer's primary data. Starting with one client, we
+										make sure to never stagnate and always evlove in accordance to the client's
+										needs. </p>
+									<p>Our mission and main scope of activity is to assist with the business' growth. We
+										can share our expertise in the field and help with one or all of
+										the below:</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="list_wrapper">
+			<ul>
+				<li class="init-list">analyse your company`s operational needs and create a tailored solution to
+					guarantee high quality and customer satisfaction;</li>
+				<li class="init-list">offer daily/weekly/monthly reporting services;</li>
+				<li class="init-list">automate redundant processes;</li>
+				<li class="init-list">train young professionals or offer training solutions to already experienced
+					employees;</li>
+				<li class="init-list">manage all reporting operations and work with internal datasources;</li>
+			</ul>
+		</div>
+
+		<div class="image_wrapper" @fade>
+			<figure class="vc_figure">
+				<div class="vc_single_image-wrapper"><img class="vc_single_image-img "
+						src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+						width="540" height="350" alt="about us" title="about us"></div>
+			</figure>
+		</div>
+
+
+
+
+
+		<div class="wpb_wrapper">
+			<p>We aim to be among the companies who are at the cutting edge of automation in business.
+				Although just staring, we aim to one day be at the forefront of innovation.
+			</p>
+			<p><strong>#LimitlessGrowth</strong> is something we strongly believe in. We believe every process
+				can be fully automized. People should be free to pursue their hobbies and not required to do boring
+				manual tasks, which just consume time. At KLM Soutions we are all focused on the future – for us “Great”
+				is simply not good enough! We keep
+				ourselves accountable and put our personal and professional reputation at stake on
+				the excellence of our work.</p>
+		</div>
+
+
+
+
+
+		<div class="wpb_wrapper">
+			<blockquote class="shortcode-blockquote">
+
+				<div class="text">
+					We are professionals with many years of experience in automation, reporting and business
+					intelligence
+				</div>
+
+
+
+			</blockquote>
+		</div>
+
+		<div class="wpb_wrapper">
+			<h2>
+				Who are we?</h2>
+		</div>
+
+
+
+
+
+		<div class="wpb_wrapper">
+			<div class="team-cards">
+
+				<!-- Slider main container -->
+				<div class="swiper-container">
+
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<div class="swiper-slide swiper-slide-prev" style="width: 370.333px; margin-right: 30px;"
+							*ngFor='let list of listOfKeyEmployees'>
+							<div class="item-content">
+								<div class="photo">
+									<div>
+										<img width="140" height="140" data-src="{{list.imageLink}}">
+									</div>
+								</div>
+
+								<div class="text-content">
+
+									<div class="name">
+										{{list.name}} </div>
+
+									<div class="position">
+										{{list.position}} </div>
+
+									<div class="text">
+										<a href="{{list.link}}"><span style="font-weight: 400;">Contact us</span></a>
+									</div>
+
+									<div class="social">
+										<a href="{{list.linkedin}}" target="_blank" rel="nofollow"><i
+												class="fa fa-linkedin"></i></a> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

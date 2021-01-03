@@ -1,0 +1,90 @@
+.single_job_listing .meta {
+    list-style: none outside;
+    padding: 0;
+    margin: 0 0 1.5em;
+    overflow: hidden;
+    zoom: 1;
+    clear: both;
+}
+
+.single_job_listing .meta li {
+    margin: 0 1em 0 0;
+    padding: .5em;
+    float: left;
+    line-height: 1em;
+    color: #999;
+}
+
+.location {
+position: relative;
+margin: 0 1em 0 0;
+padding: .5em;
+float: left;
+line-height: 1em;
+color: #999;
+}
+
+a{
+vertical-align: baseline;
+color: #02a9e3;
+}
+
+.container{
+    box-sizing: border-box;
+    vertical-align: baseline;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+}
+
+
+.col-md-8{
+box-sizing: border-box;
+display: block;
+position: relative;
+min-height: 1px;
+float: left;
+width: 66.66666667%;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+ul li{
+list-style: none;
+box-sizing: border-box;
+margin-bottom: 18px;
+position: relative;
+padding-left: 35px;
+}
+
+.list{
+background-image: url("../../assets/bulletpoint.png");
+background-repeat: no-repeat;
+background-position: left center;
+background-size: 10px;
+}
+p{
+margin-bottom: 34px;
+}
+
+.button{
+    background-color: #4CAF50;
+  border: none;
+  color: white;
+  float: right;
+  padding: 16px 16px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.Right{
+    float: right;
+}
+
+.job_description{
+    width: 60%;
+}

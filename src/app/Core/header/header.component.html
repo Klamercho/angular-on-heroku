@@ -1,0 +1,27 @@
+<header id="header-menu-wrapper"
+    class="header-menu-wrapper header-shadow-enabled scroll-menu mobile-scroll-on responsive-mode-off"
+    data-responsive="1199" data-menu-height="95" data-menu-scrolled-height="80">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header-menu classic">
+                    <div class="menu-layout-item item-logo">
+                        <a href="/" class="logo" style="width: 180px; ">
+                            <img class="" alt="KLM Everworking till the end" width="180"
+                                data-src="../../assets/Logo.png"
+                                src="../../assets/Logo.png"
+                                data-at2x="../../assets/Logo.png">
+                        </a>
+                    </div>
+                    <div class="menu-layout-item item-menu">
+                        <ul id="menu-pontica-menu" class="menu" >
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page" *ngFor="let list of listOfHeadderLinks"><a
+                                    href="{{list[0]}}/">{{list[1]}}</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
